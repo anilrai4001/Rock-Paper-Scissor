@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Scissor-Paper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="score-board">
+      <div id="heading">ROCK <br>PAPER <br>SCISSORS</div>
+
+      <div class="score">
+        COMPUTER <br />SCORE
+        <div id="comp-score"></div>
+      </div>
+
+      <div class="score">
+        YOUR
+        <br />
+        SCORE
+        <div id="user-score"></div>
+      </div>
+    </div>
+
+    <div id="game-board">
+        <div id="rock" class="btn">
+            <img src="rock-group.png" alt="">
+        </div>
+        <div id="paper" class="btn">
+            <img src="paper-group.png" alt="">
+        </div>
+        <div id="scissor" class="btn">
+            <img src="scissor-group.png" alt="">
+        </div>
+    </div>
+
+    <div id="result-board">
+        <div id="logo1">
+            YOU PICKED
+            <img id="user-choice-image" src="" alt="USER">
+        </div>
+        <div id="game-result">
+            <span id="text"></span>
+            <span id="against-text">Against PC</span>
+            <button id="play-again">Play Again</button>
+        </div>
+        <div id="logo2">
+            PC PICKED
+            <img id="comp-choice-image" src="" alt="COMP">
+        </div>
+    </div>
+
+
+    <div id="rules">RULES</div>
+    <div id="instructions">
+        <h3>GAME RULES</h3>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+        <div id="cross">X</div>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
