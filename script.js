@@ -24,6 +24,7 @@ let text = document.getElementById('text');
 let against_text = document.getElementById('against-text');
 let instructions = document.getElementById('instructions');
 let rules = document.getElementById('rules');
+let next = document.getElementById('next');
 let cross = document.getElementById('cross');
 
 
@@ -63,9 +64,8 @@ function wonLayout(userChoice,compChoice){
     setImage1(userChoice);
     text.innerHTML='YOU WON';
     setImage2(compChoice);
-   
-    
     resultBoard.style.scale=1;
+    next.style.display='inline-block';
 }
 function lostLayout(userChoice,compChoice){
     gameBoard.style.scale=0;
